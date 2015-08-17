@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping package="com.hand.bean">
+   <class name="Store" table="STORE">
+      <id name="id" type="byte" column="store_id">
+         <generator class="native"/>
+      </id>
+      <property name="managerstaffid" column="manager_staff_id" type="byte" />
+      <property name="addressid" column="address_id" type="short"/>
+      <property name="lastupdate" column="last_update" type="timestamp"/>
+   </class>
+</hibernate-mapping>
